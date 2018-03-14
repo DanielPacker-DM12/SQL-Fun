@@ -10,3 +10,7 @@ JOIN Customer c ON i.CustomerId = c.CustomerId
 SELECT c.FirstName, c.LastName, e.FirstName, e.LastName
 FROM Customer c
 JOIN Employee e ON c.SupportRepId = e.EmployeeId
+
+SELECT al.title, ar.name
+FROM Album al
+JOIN Artist ar ON al.ArtistId = ar.ArtistId
