@@ -6,3 +6,7 @@ WHERE il.UnitPrice > 0.99;
 SELECT i.invoiceDate, c.FirstName, c.LastName, i.Total
 FROM Invoice i
 JOIN Customer c ON i.CustomerId = c.CustomerId
+
+SELECT c.FirstName, c.LastName, e.FirstName, e.LastName
+FROM Customer c
+JOIN Employee e ON c.SupportRepId = e.EmployeeId
